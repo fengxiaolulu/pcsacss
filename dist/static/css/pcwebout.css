@@ -1,0 +1,973 @@
+.conect_inner {
+	width: 990px;
+	margin: 0 auto;
+	background-color: #fff;
+	position: relative;
+}
+
+.in_outer {
+	position: relative;
+}
+
+.multi_con {
+	height: 300px;
+}
+
+.multi_con .clm {
+	float: left;
+	height: 300px;
+	position: relative;
+}
+
+.clm2 {
+	width: 49.79%;
+}
+
+.clm3 {
+	width: 33.13%;
+}
+
+.clm4 {
+	width: 24.79%;
+}
+
+.clm5 {
+	width: 19.79%;
+}
+
+
+/*栏目导航*/
+
+.moduleAreaNav  {
+	background-color: rgb(15, 75, 143);
+}
+
+.moduleAreaNav_con {
+	z-index: 9;
+}
+.nav_i_show0 {
+	width: 990px;
+	margin: 0 auto;
+}
+.nav_i_show0 li {
+	float: left;
+	height: 40px;
+	width: 150px;
+	cursor: pointer;
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+	position: relative;
+	line-height: 40px;
+}
+
+.nav_i_show0 li:hover {
+	background-color: rgb(3, 147, 218);
+}
+
+.nav_i_show0 li:hover .sec_con {
+	display: block;
+}
+
+.nav_i_show0 .sec_con {
+	top: 40px;
+	left: 0;
+	background-color: rgba(33, 33, 33, 0.78369140625);
+	width: 150px;
+	display: none;
+	position: absolute;
+}
+
+.nav_i_show0 .sec_con li:hover {
+	background-color: rgb(3, 147, 218);
+	color: #fff;
+}
+
+.nav_i_show0 .sec_con li:hover .third_con {
+	display: block;
+}
+
+.nav_i_show0 .third_con {
+	left: 150px;
+	top: 0;
+	width: 150px;
+	display: none;
+	position: absolute;
+	background-color: rgba(33, 33, 33, 0.78369140625);
+}
+
+.nav_i_show0 .third_con:hover {
+	display: block;
+}
+
+.nav_i_show0 .third_con .third_item:hover {
+	color: #fff;
+	background-color: rgb(3, 147, 218);
+}
+
+
+/*轮播图效果*/
+
+.carousel-wrap {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	background-color: #fff;
+	z-index: 99;
+}
+
+.slide-ul {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+}
+
+.slide-ul li {
+	float: left;
+}
+
+.slide-ul li img {
+	width: 100%;
+	height: 100%;
+}
+.con_rt {
+	margin: 15px 15px 0 15px;
+}
+.con_rt img { 
+	width: 150px;
+	height: 150px;
+	margin-top: 20px;
+}
+.carousel-items {
+	position: absolute;
+	z-index: 10;
+	bottom: 15px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0;
+}
+
+.carousel-items span {
+	display: inline-block;
+	height: 6px;
+	width: 30px;
+	margin: 0 3px;
+	background-color: #FFFFFF;
+	cursor: pointer;
+}
+
+.carousel-items .active {
+	background-color: #2D64B3;
+}
+
+.bot-img {
+	position: absolute;
+	height: 60px;
+	right: 10px;
+	bottom: 10px;
+}
+
+.bot-img ul {
+	height: 60px;
+}
+
+.bot-img li {
+	float: right;
+}
+
+.bot-img li img {
+	width: 60px;
+	height: 60px;
+}
+
+.list-enter-to {
+	transition: all 1s ease;
+	transform: translateX(0);
+}
+
+.list-leave-active {
+	transition: all 1s ease;
+	transform: translateX(-100%);
+}
+
+.list-enter {
+	transform: translateX(100%);
+}
+
+.list-leave {
+	transform: translateX(0);
+}
+.carousel-is{
+	position: absolute;	
+	bottom: 10px;
+	right: 10px;
+	height: 20px;
+}
+.carousel-is span {
+	background-color: #444;
+	color: #fff;
+	text-align: center;
+	margin-right: 10px;
+}
+
+.carousel-is0 span {	
+	width: 20px;	
+	line-height: 20px;
+	color: #fff;
+	height: 20px;
+}
+
+.carousel-is1 span {
+	float: left;
+	width: 6px;
+	background-color: #444;
+	text-align: center;
+	margin-right: 10px;
+	line-height: 2px;
+	font-size: 0;
+	border-radius: 5px;
+	overflow: hidden;
+	height: 6px;
+}
+.carousel-is2 span {
+	float: left;
+	width: 6px;
+	background-color: #444;
+	text-align: center;
+	margin-right: 10px;
+	line-height: 2px;
+	font-size: 0;
+	overflow: hidden;
+	height: 6px;
+}
+.carousel-is3 {
+	top: 45%;
+	width: 100%;
+}
+.carousel-is3 span {
+	display: none;
+}
+.carousel-is3 .emron {
+	display: block;
+}
+.carousel-is3 .emron {
+	display: block;
+	margin-left: 20px;
+	height: 30px;
+}
+.carousel-is3 em.r {
+	background-image: url('/static/image/right.png');
+	right: 15px;
+	float: right;
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+.carousel-is3 em.l {
+	background-image: url('/static/image/left.png');
+	left: 15px;
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+/*按钮组件*/
+.m_button_con button {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.m_button_con button span {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+/*文件下载组件*/
+.areaFile .detail ul {
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+}
+
+.areaFile .detail ul li {
+	border: 1px solid #E3E3E3;
+	overflow: hidden;
+	padding: 10px 20px;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+.areaFile .detail ul li p {
+	float: left;
+}
+
+.areaFile .detail ul li p span{
+	margin-left: 15px;
+	color: #888;
+}
+
+.areaFile .detail ul li button {
+	float: left;
+}
+
+.areaFile .page {
+	margin-top: 10px;
+	display: table;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.areaFile .page p {
+	float: left;
+	margin-right: 10px;
+}
+
+.areaFile .page p a {
+	display: block;
+	border-radius: 3px;
+	color: #666;
+	border: 1px solid #b3b3b3;
+	text-decoration: none;
+	padding: 2px 10px;
+	font-size: 14px;
+}
+
+.areaFile .page p a:hover {
+	background: #5874d8;
+	color: #FFFFFF;
+}
+
+
+/*收藏本站组件*/
+
+.areaIndexFavorite .detail {
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.areaIndexFavorite .detail p a {
+	border-right: 1px solid #E3E3E3;
+	padding: 0 5px;
+}
+
+.areaIndexFavorite .detail p a:nth-last-child(1) {
+	border: none;
+}
+
+
+/*当前位置组件*/
+
+.areaLocation .detail {
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+/*在线地图组件*/
+
+.areaMap .map {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border: 1px solid #E3E3E3;
+}
+
+
+/*文章列表组件*/
+
+.articleScrap .detail ul li a {
+	color: #666666;
+}
+
+.articleScrap .detail ul li .text {
+	background: #F5F5F5;
+	box-sizing: border-box;
+}
+
+.articleScrap .detail ul li .text .title {
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.articleScrap .detail ul li .text .describe {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.articleScrap .page {
+	margin-top: 10px;
+	display: table;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.articleScrap .page p {
+	float: left;
+	margin-right: 10px;
+}
+
+.articleScrap .page p a {
+	display: block;
+	border-radius: 3px;
+	color: #666;
+	border: 1px solid #b3b3b3;
+	text-decoration: none;
+	padding: 2px 10px;
+	font-size: 14px;
+}
+
+.articleScrap .page p a:hover {
+	background: #5874d8;
+	color: #FFFFFF;
+}
+
+
+/*列表多图组件*/
+
+.columnPicture .detail {
+	clear: both;
+	overflow: hidden;
+}
+
+.columnPicture .detail ul {
+	clear: both;
+	overflow: hidden;
+}
+
+.columnPicture .detail ul li {
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+
+.columnPicture .detail ul li img {
+	height: auto;
+	position: relative;
+}
+
+.columnPicture .detail ul li p {
+	line-height: 25px;
+	text-align: center;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.columnPicture .detail ul li .hid {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 25px;
+	transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-webkit-transition: all 0.7s;
+	-o-transition: all 0.7s;
+}
+
+.columnPicture .detail ul .mouseenterOne:hover .hid {
+	display: none;
+}
+
+.columnPicture .detail ul .mouseenterTwo:hover .hid {
+	display: block;
+	background: none !important;
+}
+
+.columnPicture .detail ul .mouseenterTwo:hover .hid p {
+	display: none;
+}
+
+.columnPicture .detail ul .mouseenterThree:hover .hid {
+	border: none !important;
+	left: 32%;
+	right: 32%;
+	top: 20%;
+	bottom: 60px;
+	display: block;
+	background: rgba(0, 0, 0, 0.7) !important;
+	border-radius: 100%;
+}
+
+.columnPicture .detail ul .mouseenterThree:hover .hid p {
+	display: none;
+}
+
+.columnPicture .detail ul .mouseenterThree:hover .hid i {
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin-left: 39%;
+	margin-top: 37%;
+	background: url(../../../static/image/mbg01.png)no-repeat center;
+	background-position: 0 -1085px;
+}
+
+.columnPicture .detail ul .mouseenterFour:hover .hid {
+	border: none !important;
+	display: block;
+	background: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	padding-top: 40%;
+}
+
+.columnPicture .detail ul .mouseenterFour:hover .hid p {
+	color: #FFFFFF;
+}
+
+.columnPicture .detail ul .mouseenterFive:hover .hid {
+	border: none !important;
+	display: block;
+	top: auto;
+	height: 25px;
+	line-height: 25px;
+}
+
+.columnPicture .detail ul .mouseenterFive:hover .hid p {
+	color: #FFFFFF;
+}
+
+.columnPicture .detail .carousel-wrap {
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+	position: relative;
+}
+
+.columnPicture .detail .carousel-wrap .width {
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.columnPicture .detail .carousel-wrap .slide-ul {
+	width: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.columnPicture .detail .carousel-wrap .button span {
+	font-size: 24px;
+	font-family: "agency fb";
+	color: #FFFFFF;
+	background: #409EFF;
+	padding: 0px 15px;
+	border-radius: 100%;
+	position: absolute;
+	cursor: pointer;
+}
+
+.columnPicture .detail .carousel-wrap .button .prev {
+	left: 0px;
+	top: 70px;
+}
+
+.columnPicture .detail .carousel-wrap .button .next {
+	left: auto;
+	right: 0px;
+	top: 70px;
+}
+
+
+/*图文展示组件*/
+
+.graphic .detail {
+	border: 1px solid #E3E3E3;
+	clear: both;
+	overflow: hidden;
+}
+
+.graphic .detail .text {
+	box-sizing: border-box;
+}
+
+.graphic .detail .text p {
+	line-height: 1.8;
+}
+
+.graphic .detail .more {
+	float: right;
+	color: #409EFF;
+	text-decoration: none;
+}
+
+
+/*留言提交组件*/
+
+.msgSubmit .detail button {
+	text-align: center;
+	line-height: 35px;
+	font-size: 16px;
+	border-width: 1px;
+	border-style: solid;
+	font-weight: bold;
+}
+
+
+/*轮播多图组件*/
+
+.multiCarousel .carousel-wrap {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	background-color: #fff;
+	z-index: 99;
+}
+
+.multiCarousel .slide-ul {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+}
+
+.multiCarousel .slide-ul li {
+	float: left;
+}
+
+.multiCarousel .slide-ul li img {
+	width: 100%;
+	height: 100%;
+}
+
+.multiCarousel .carousel-items {
+	position: absolute;
+	z-index: 10;
+	bottom: 15px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0;
+}
+
+.multiCarousel .carousel-items span {
+	display: inline-block;
+	height: 6px;
+	width: 30px;
+	margin: 0 3px;
+	background-color: #FFFFFF;
+	cursor: pointer;
+}
+
+.multiCarousel .carousel-items .active {
+	background-color: #2D64B3;
+}
+
+.multiCarousel .bot-img {
+	position: absolute;
+	height: 60px;
+	right: 10px;
+	bottom: 10px;
+}
+
+.multiCarousel .bot-img ul {
+	height: 60px;
+}
+
+.multiCarousel .bot-img li {
+	float: right;
+}
+
+.multiCarousel .bot-img li img {
+	width: 60px;
+	height: 60px;
+}
+
+.multiCarousel .list-enter-to {
+	transition: all 1s ease;
+	transform: translateX(0);
+}
+
+.multiCarousel .list-leave-active {
+	transition: all 1s ease;
+	transform: translateX(-100%);
+}
+
+.multiCarousel .list-enter {
+	transform: translateX(100%);
+}
+
+.multiCarousel .list-leave {
+	transform: translateX(0);
+}
+
+
+/*产品搜索组件*/
+
+.productSearch .detail {
+	clear: both;
+	overflow: hidden;
+	border-style: solid;
+}
+
+.productSearch .detail input {
+	width: 70%;
+	height: 30px;
+	float: left;
+}
+
+.productSearch .detail button {
+	width: 30%;
+	float: right;
+}
+
+.productSearch .detail button span {
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin-left: 30%;
+	font-size: 18px;
+}
+
+
+/*产品展示组件*/
+
+.productShow .detail ul {
+	clear: both;
+	overflow: hidden;
+}
+
+.productShow .detail ul li {
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+
+.productShow .detail ul li img {
+	height: auto;
+	position: relative;
+}
+
+.productShow .detail ul li p {
+	line-height: 25px;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.productShow .detail ul li .hid {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 25px;
+	transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-webkit-transition: all 0.7s;
+	-o-transition: all 0.7s;
+}
+
+.productShow .detail ul .mouseenterOne:hover .hid {
+	display: none;
+}
+
+.productShow .detail ul .mouseenterTwo:hover .hid {
+	display: block;
+	background: none !important;
+}
+
+.productShow .detail ul .mouseenterTwo:hover .hid p {
+	display: none;
+}
+
+.productShow .detail ul .mouseenterThree:hover .hid {
+	border: none !important;
+	left: 32%;
+	right: 32%;
+	top: 20%;
+	bottom: 60px;
+	display: block;
+	background: rgba(0, 0, 0, 0.7) !important;
+	border-radius: 100%;
+}
+
+.productShow .detail ul .mouseenterThree:hover .hid p {
+	display: none;
+}
+
+.productShow .detail ul .mouseenterThree:hover .hid i {
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin-left: 39%;
+	margin-top: 37%;
+	background: url(../../../static/image/mbg01.png)no-repeat center;
+	background-position: 0 -1085px;
+}
+
+.productShow .detail ul .mouseenterFour:hover .hid {
+	border: none !important;
+	display: block;
+	background: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	padding-top: 30%;
+}
+
+.productShow .detail ul .mouseenterFour:hover .hid p {
+	color: #FFFFFF;
+}
+
+.productShow .carousel-wrap {
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+	position: relative;
+}
+
+.productShow .carousel-wrap .width {
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.productShow .carousel-wrap .slide-ul {
+	width: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.productShow .carousel-wrap .button span {
+	font-size: 24px;
+	font-family: "agency fb";
+	color: #FFFFFF;
+	background: #409EFF;
+	padding: 0px 15px;
+	border-radius: 100%;
+	position: absolute;
+	cursor: pointer;
+}
+
+.productShow .carousel-wrap .button .prev {
+	left: 0px;
+	top: 70px;
+}
+
+.productShow .carousel-wrap .button .next {
+	left: auto;
+	right: 0px;
+	top: 70px;
+}
+
+.productShow .page {
+	margin-top: 10px;
+	display: table;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.productShow .page p {
+	float: left;
+	margin-right: 10px;
+}
+
+.productShow .page p a {
+	display: block;
+	border-radius: 3px;
+	color: #666;
+	border: 1px solid #b3b3b3;
+	text-decoration: none;
+	padding: 2px 10px;
+	font-size: 14px;
+}
+
+.productShow .page p a:hover {
+	background: #5874d8;
+	color: #FFFFFF;
+}
+
+
+/*在线客服组件*/
+
+.serviceOnline .detail p {
+	clear: both;
+	overflow: hidden;
+}
+
+.serviceOnline .detail .title {
+	font-weight: bold;
+	border-bottom: 1px dashed #E3E3E3;
+	font-size: 16px;
+	color: #888888;
+	line-height: 35px;
+	margin-top: 10px;
+}
+
+.serviceOnline .detail ul {
+	clear: both;
+	overflow: hidden;
+}
+
+.serviceOnline .detail ul li {
+	width: auto;
+}
+
+.serviceOnline .detail .text {
+	color: #888888;
+	line-height: 30px;
+	margin-left: 20px;
+}
+
+.serviceOnline .detail .text img {
+	margin-right: 5px;
+}
+
+.serviceOnline .detail .text span {
+	margin-right: 10px;
+}
+
+
+/*在线表单组件*/
+
+.siteForm .detail p {
+	overflow: hidden;
+	line-height: 40px;
+}
+
+.siteForm .detail p span {
+	text-align: right;
+}
+
+.siteForm .detail p input {
+	line-height: 40px;
+	border: 1px solid #E3E3E3;
+	border-radius: 5px;
+	padding-left: 10px;
+}
+
+.siteForm .detail textarea {
+	border: 1px solid #E3E3E3;
+	border-radius: 5px;
+	margin-top: 15px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+
+/*二维码组件*/
+
+.siteQrCode .detail img {
+	height: auto;
+}
+
+.siteQrCode .detail p {
+	width: 100%;
+	text-align: center;
+	line-height: 25px;
+	color: #666666;
+}

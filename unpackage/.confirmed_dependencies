@@ -1,0 +1,10 @@
+{
+	"index.html": {
+		"resources": [
+			"/static/webuploader/webuploader.css",
+			"/static/webuploader/webuploader.js",
+			"/static/css/pcwebout.css",
+			"/static/ckeditor_4.9.0_basic/ckeditor/ckeditor.js"
+		]
+	}
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../../../../static/js/jquery-1.12.3.min.js"></script>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				font-family: "Microsoft YaHei", verdana;
+			}
+			
+			body{
+				background: #F5F5F5;
+				min-height: 1200px;
+			}
+			
+			.container {
+				padding: 0;
+				width: 1280px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			/*电脑端导航第一种*/
+			
+			.headerone {
+				position: fixed;
+				z-index: 999;
+				height: 80px;
+				width: 100%;
+				border: 1px solid red;
+			}
+			
+			.header2 {
+				background: rgba(255, 255, 255, 0.9);
+				box-shadow: 0px 2px 5px #CCCCCC;
+			}
+			
+			.headerone .logo {
+				border: 1px solid #E3E3E3;
+				display: block;
+				width: 100px;
+				height: 60px;
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				line-height: 60px;
+			}
+			
+			#nav {
+				width: 82%;
+				height: 80px;
+				float: right;
+				margin-bottom: 0;
+			}
+			
+			#nav .navlist {
+				float: left;
+				width: 11.1%;
+				text-align: center;
+				height: 80px;
+			}
+			
+			#nav .navlist a {
+				color: #000;
+				height: 80px;
+				font-weight: bold;
+				display: block;
+				text-decoration: none;
+				font-size: 14px;
+				padding-top: 20px;
+				box-sizing: border-box;
+			}
+			
+			#nav .navlist a span {
+				font-weight: normal;
+			}
+			
+			#nav .navlist:hover a {
+				color: #FFFFFF;
+				background: #222222;
+			}
+			
+			#nav .a1 a {
+				color: #FFFFFF;
+				background: #222222;
+			}
+			
+			#nav .back {
+				display: none;
+			}
+			
+			#nav .navlist .navdropdown {
+				display: none;
+				position: absolute;
+				width: 100%;
+				z-index: 999;
+				text-align: center;
+				left: 0;
+				padding-left: 35%;
+				background: rgba(255, 255, 255, 0.9);
+			}
+			
+			#nav .navlist .navdropdown li {
+				float: left;
+				border: none;
+				height: 100px;
+				text-align: left;
+				margin-right: 40px;
+			}
+			
+			#nav .icon .navdropdown li img {
+				width: 45px;
+				height: 60px;
+				margin-right: 10px;
+				padding-top: 15px;
+				margin-bottom: 2px;
+				margin-left: -4px;
+			}
+			
+			#nav .icon .navdropdown li {
+				margin-right: 65px;
+			}
+			
+			#nav .icon .navdropdown li a {
+				line-height: 25px !important;
+				font-size: 14px !important;
+			}
+			
+			#nav .navlist .navdropdown li a {
+				height: 85px;
+				line-height: 95px;
+				text-decoration: none;
+				color: #808080;
+				font-size: 15px;
+				padding: 0;
+				background: none;
+			}
+			
+			#nav .navlist .navdropdown li a:hover {
+				text-decoration: none;
+				color: #222;
+			}
+		</style>
+		<script>
+			$(window).scroll(function() {
+
+				var headertop = $(document).scrollTop();
+
+				if(headertop > 50) {
+					$('.headerone').addClass('header2');
+				} else {
+					$('.headerone').removeClass('header2');
+				}
+
+			});
+		</script>
+	</head>
+
+	<body>
+		<!--电脑端导航第一种-->
+		<header class="headerone">
+			<div class="container">
+				<a href="../home/index.html" class="logo">LOGO</a>
+				<ul id="nav">
+					<li class="navlist a1">
+						<a href="../home/index.html">首页<br/><span>Home</span></a>
+					</li>
+					<li class="navlist icon">
+						<a href="../product/index.html">产品<br/><span>Products</span></a>
+						<ul class="navdropdown">
+							<li>
+								<a href="../product/index.html"><img src="../images/icon08.png" /><br/>&nbsp;全部</a>
+							</li>
+							<li>
+								<a href="../product/index.html"><img src="../images/icon06.png" /><br/>&nbsp;座椅</a>
+							</li>
+							<li>
+								<a href="../product/index.html"><img src="../images/icon04.png" /><br/>&nbsp;沙发</a>
+							</li>
+							<li>
+								<a href="../product/index.html"><img src="../images/icon05.png" /><br/>&nbsp;茶几</a>
+							</li>
+							<li>
+								<a href="../product/index.html"><img src="../images/icon07.png" /><br/>&nbsp;柜架</a>
+							</li>
+							<li>
+								<a href="../product/index.html"><img src="../images/icon09.png" /><br/>&nbsp;Kvell</a>
+							</li>
+						</ul>
+					</li>
+					<li class="navlist">
+						<a href="../Prejects/index.html">工程<br/><span>Prejects</span></a>
+						<ul class="navdropdown">
+							<li>
+								<a href="../Prejects/index.html">套间</a>
+							</li>
+							<li>
+								<a href="../Prejects/index.html">商业空间</a>
+							</li>
+							<li>
+								<a href="../Prejects/index.html">星级酒店</a>
+							</li>
+							<li>
+								<a href="../Prejects/index.html">其他</a>
+							</li>
+						</ul>
+					</li>
+					<li class="navlist">
+						<a href="../Story/index.html">故事<br/><span>Story</span></a>
+						<ul class="navdropdown">
+							<li>
+								<a href="../Story/index.html">唯诺雅居</a>
+							</li>
+							<li>
+								<a href="../Story/index2.html">品牌</a>
+							</li>
+							<li>
+								<a href="../Story/index3.html">设计师</a>
+							</li>
+						</ul>
+					</li>
+					<li class="navlist">
+						<a href="../Shot/index.html">镜头<br/><span>Shot</span></a>
+					</li>
+					<li class="navlist">
+						<a href="../News/index.html">动态<br/><span>News</span></a>
+						<ul class="navdropdown">
+							<li>
+								<a href="../News/index.html">工厂动态</a>
+							</li>
+							<li>
+								<a href="../News/index.html">商务活动</a>
+							</li>
+						</ul>
+					</li>
+					<li class="navlist">
+						<a href="../Services/index.html">服务<br/><span>Services</span></a>
+						<ul class="navdropdown">
+							<li>
+								<a href="../Services/index.html">工程家具定制</a>
+							</li>
+							<li>
+								<a href="../Services/index.html">批量家具定制</a>
+							</li>
+							<li>
+								<a href="../Services/index.html">设计师家具定制</a>
+							</li>
+							<li>
+								<a href="../Services/index.html">设计师原样开发</a>
+							</li>
+						</ul>
+					</li>
+					<li class="navlist">
+						<a href="../Co-Operate/index.html">合作<br/><span>Cooperate</span></a>
+					</li>
+					<li class="navlist">
+						<a href="../Contact/index.html">联系<br/><span>Contact</span></a>
+					</li>
+					<li class="navlist back">
+						<a href="#">返回顶部<br/><span>Back</span></a>
+					</li>
+				</ul>
+			</div>
+		</header>
+	</body>
+
+</html>

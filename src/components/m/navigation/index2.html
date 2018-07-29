@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../../../../static/js/jquery-1.12.3.min.js"></script>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				font-family: "Microsoft YaHei", verdana;
+			}
+			
+			body {
+				background: #F5F5F5;
+				min-height: 1200px;
+			}
+			
+			.container {
+				padding: 0;
+				width: 1280px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			/*电脑端导航第二种*/
+			
+			.headertwo {
+				background: #DCF689 url(../images/bg01.jpg) no-repeat;
+				height: 100%;
+				width: 236px;
+				position: relative;
+				z-index: 99;
+				left: 0;
+				top: 0;
+			}
+			.headertwo .logo {
+				margin-top: 35px;
+				margin-left: 70px;
+			}
+			
+			#nav {
+				width: 100%;
+				margin-bottom: 0;
+				margin-top: 18px;
+			}
+			
+			#nav .navlist {
+				box-sizing: border-box;
+				width: 100%;
+				text-align: right;
+				height: 57px;
+				/*border-bottom: 1px solid #cfec66;*/
+				padding-right: 30px;
+				transition: all 0.5s;
+				-moz-transition: all 0.5s;
+				-webkit-transition: all 0.5s;
+				-o-transition: all 0.5s;
+			}
+			
+			#nav .navlist a {
+				color: #27700a;
+				display: block;
+				font-size: 15px;
+				line-height: 57px;
+				text-decoration: none;
+				font-weight: bold;
+			}
+			
+			#nav .navlist:hover {
+				background: #d7f182;
+			}
+			
+			#nav .navlist:hover a {
+				color: #1F5300;
+			}
+			
+			#nav .a1 {
+				background: #d7f182;
+			}
+			
+			#nav .a1 a {
+				color: #1F5300;
+			}
+			
+			.search-in {
+				width: 236px;
+				height: 57px;
+				margin-top: 0px;
+				background: #ceef66;
+			}
+			
+			.search-in input {
+				background: none;
+				border: none;
+				padding: 0px 10px;
+				color: #333333;
+				height: 56px;
+				width: 180px;
+				outline: none;
+				float: left;
+			}
+			
+			.search-in button {
+				float: left;
+				border: none;
+				outline: none;
+				background: none;
+				margin-top: 0px;
+			}
+			
+			.search-in button img {
+				height: 21px;
+				width: 22px;
+				margin-top: 18px;
+			}
+			
+			.headertwo .erweima {
+				position: relative;
+				z-index: 999;
+			}
+			
+			.headertwo .erweima .hover {
+				margin-left: 175px;
+				margin-top: 110px;
+			}
+			
+			.headertwo .erweima ul {
+				width: 450px;
+				height: 150px;
+				position: absolute;
+				visibility: hidden;
+				opacity: 0;
+				left: 236px;
+				top: 25px;
+				z-index: 999;
+				background: rgba(0, 0, 0, 0.7);
+				transition: all 1.0s;
+				-moz-transition: all 1.0s;
+				-webkit-transition: all 1.0s;
+				-o-transition: all 1.0s;
+			}
+			
+			.headertwo .erweima li {
+				float: left;
+				width: 145px;
+				text-align: center;
+				padding-top: 18px;
+			}
+			
+			.headertwo .erweima li img {
+				width: 97px;
+				height: 97px;
+			}
+			
+			.headertwo .erweima li p {
+				color: #FFFFFF;
+			}
+			
+			.headertwo .erweima .hover:hover+ul {
+				opacity: 1.0;
+				visibility: visible;
+			}
+		</style>
+		<script>
+			
+		</script>
+	</head>
+
+	<body>
+		<!--电脑端导航第二种-->
+		<header class="headertwo">
+			<a href="../home/index.html"><img src="../images/logo.png" class="logo" /></a>
+			<ul id="nav">
+				<li class="navlist a1">
+					<a href="../home/index.html">首页</a>
+				</li>
+				<li class="navlist">
+					<a href="../news/index.html">最新消息</a>
+				</li>
+				<li class="navlist">
+					<a href="../about/index.html">品牌文化</a>
+				</li>
+				<li class="navlist">
+					<a href="../pro/index.html">健康食品</a>
+				</li>
+				<li class="navlist">
+					<a href="../lvyou/index.html">工业旅游</a>
+				</li>
+				<li class="navlist">
+					<a href="../yangsheng/index.html">养生百科</a>
+				</li>
+				<li class="navlist">
+					<a href="../shop/index.html">官方商城</a>
+				</li>
+				<li class="navlist">
+					<a href="../contact/index.html">联系我们</a>
+				</li>
+				<li class="navlist">
+					<a href="../video/index.html">视频中心</a>
+				</li>
+			</ul>
+			<div class="search-in">
+				<input type="search" placeholder="" />
+				<button type="submit"><img src="../images/icon01.png" /></button>
+			</div>
+			<div class="erweima">
+				<img src="../images/icon02.png" class="hover" />
+				<ul>
+					<li>
+						<img src="../images/erweima.png" />
+						<p>劲家庄分销商城</p>
+					</li>
+					<li>
+						<img src="../images/erweima.png" />
+						<p>劲家庄微商城</p>
+					</li>
+					<li>
+						<img src="../images/erweima.png" />
+						<p>扫描微信关注劲家庄</p>
+					</li>
+				</ul>
+			</div>
+		</header>
+	</body>
+
+</html>

@@ -1,0 +1,25 @@
+/* 通用 */
+html { overflow-y: scroll;}
+article,aside,blockquote,body,button,code,dd,details,div,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul {  margin: 0; padding: 0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display: block;}
+body,button,input,select,textarea {font: 14px/1.6 arial,Microsoft YaHei,simsun;}
+button,input,select,textarea { outline: none; background:none; resize: none; border: none; }
+h1,h2,h3,h4,h5,h6 { font-size: 100%; }
+address,cite,dfn,em,var,i { font-style: normal; }
+code,kbd,pre,samp { font-family: courier new, courier, monospace; }
+ol,ul { list-style: none; }
+a { text-decoration: none; }
+a:hover,a:active { text-decoration:none; }
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+legend { color: #000; }
+fieldset,img { border: 0;}
+img,object {  vertical-align: middle; }
+table { border-collapse: collapse; border-spacing: 0; }
+.g-cf { *zoom:1 }
+.g-cf:after { display: block; visibility: hidden; clear: both; height: 0;content: '\20'}
+.w3{ letter-spacing:0.5em; /*如果需要y个字两端对齐，则为(x-y)/(y-1),这里是（4-3）/(3-1)=0.5em */ margin-right:-0.5em; /*同上*/}
+.g-fr{ float: right; }
+.g-fl{ float: left; }
+body { color: #111;-webkit-tap-highlight-color: rgba(0,0,0,0);overflow: hidden;-webkit-tap-highlight-color:rgba(255,255,255,0); background: #fff; }
+.vue-contextmenu-listWrapper .context-menu-list button i,.vue-contextmenu-listWrapper .context-menu-list button span{ margin-left: 15px; }
